@@ -6,6 +6,7 @@ class Button extends Component{
         return(
             <div className={`column-${this.props.cols}`}>
             <button className="calc-button" onClick={()=>this.props.action(this.props.symbol)}>{this.props.symbol}</button>
+            {/* this helps to display symbols on button - 'this.props.symbol' */}
             </div>
         );
     }
