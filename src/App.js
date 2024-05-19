@@ -65,6 +65,7 @@ calculate =(symbol) =>{
     ];
     return (
     <div className="App">
+    <div className="calc">
       {this.state.previous.length > 0 ?
       <div className="floaty-last">{this.state.previous[this.state.previous.length -1]}</div>
     :null}
@@ -75,7 +76,7 @@ calculate =(symbol) =>{
         // here action is a props which call function that takes 'symbol' and passes it over to button's action function
         //here we have given function in array 'reset' and 'addtocurrent' to action of buttons
         })}
-
+    </div>
     </div>
   );
     }
